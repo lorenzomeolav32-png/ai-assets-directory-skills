@@ -9,6 +9,8 @@ files.
 | Skill | Description |
 |-------|-------------|
 | [create-skill](skills/create-skill) | Scaffold high-quality Claude Code skills and slash commands with correct frontmatter, conventions and worked examples. |
+| [complete-website-builder](skills/complete-website-builder) | Build a production-grade, agency-quality marketing website as one self-contained HTML file — researched Unsplash photos, Ken Burns hero, GSAP animations, glassmorphism, and a persona library for any business type. |
+| [job-message](skills/job-message) | Write short, punchy application messages for job portals and forms — concise notes that connect your real CV experience to the role, not a full cover letter. |
 
 ## Install a skill
 
