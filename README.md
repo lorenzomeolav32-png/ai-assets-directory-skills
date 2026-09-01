@@ -1,41 +1,28 @@
-# skill-creator
+# AI Assets Directory — Skills
 
-A Claude Code skill that helps you create other high-quality skills and slash
-commands. It encodes the conventions for skill frontmatter, invocation control,
-supporting files, shell injection and the common skill patterns (task, research,
-knowledge, dynamic context) so new skills come out consistent and well structured.
+A collection of Claude Code / agent skills maintained by AI Assets Directory. Each
+skill lives in its own folder under `skills/` with a `SKILL.md` plus any supporting
+files.
 
-The skill itself is named `create-skill` (that is the `/create-skill` command);
-this repository is the distributable package for it.
+## Skills
 
-## What it does
+| Skill | Description |
+|-------|-------------|
+| [create-skill](skills/create-skill) | Scaffold high-quality Claude Code skills and slash commands with correct frontmatter, conventions and worked examples. |
 
-- Walks through skill type, scope and frontmatter decisions before writing.
-- Produces a complete `SKILL.md` plus supporting files when needed.
-- Enforces conventions: kebab-case names, description trigger phrases, the 300-line
-  `SKILL.md` limit, `${CLAUDE_SKILL_DIR}` references, and safe tool restrictions.
+## Install a skill
 
-## Install
-
-Clone into your personal skills folder (the folder name must be `create-skill`,
-matching the skill's `name`):
+Clone the repo and copy the skill folder into your skills directory (the folder name
+must match the skill's `name`):
 
 ```bash
-git clone https://github.com/lorenzomeolav32-png/skill-creator \
-  ~/.claude/skills/create-skill
+git clone https://github.com/lorenzomeolav32-png/ai-assets-directory-skills
+cp -r ai-assets-directory-skills/skills/create-skill ~/.claude/skills/create-skill
 ```
 
-For a project-scoped install, clone into `.claude/skills/create-skill/` instead.
-Then reload skills and run `/create-skill [what you want to build]`.
-
-## Files
-
-| File | Purpose |
-|------|---------|
-| `SKILL.md` | Main instructions (loaded when the skill activates). |
-| `reference.md` | Full frontmatter / variables / shell-injection reference. |
-| `examples.md` | Real-world skill examples for each pattern. |
+For a project-scoped install, copy into `.claude/skills/<name>/` instead, then reload
+skills.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE). Applies to all skills in this repository.
